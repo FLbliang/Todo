@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Test</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="add-task">
+				<h1>我的Todo</h1>
+				<form class="form">
+					<input type="text" id="" value="" placeholder="What do you want to do ?" />
+					<input type="submit" value="提交" />
+				</form>
+				<ul class="list">
+				</ul>
+				<div class="task-detail-mask">
+				</div>
+			</div>
+
+		</div>
+		<div class="box-page">
+			<div class="box">
+				<h3>是否要删除?</h3>
+				<div class="box-button">
+					<input type="button" id="sure" value="确定" />
+					<input type="button" id="cancel" value="取消" />
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<script src="lib/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/store2/dist/store2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/todo.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			new Todo({
+				recordName: "todo"
+			});
+		});
+	</script>
+
+</html>
