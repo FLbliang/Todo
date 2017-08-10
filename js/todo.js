@@ -1,33 +1,3 @@
-function scroll() {
-	if(document.body.scrollTop || document.body.scrollLeft) { //谷歌浏览器
-		return {
-			top: document.body.scrollTop,
-			left: document.body.scrollLeft
-		}
-	} else { // 其他浏览器
-		return {
-			top: document.documentElement.scrollTop,
-			left: document.documentElement.scrollLeft
-		}
-	}
-}
-
-function changeAttr(obj, attr, offset, add){
-	obj.style[attr] = obj[offset] + add + "px";
-}
-
-function $(name){
-	return document.getElementsByClassName(name);
-}
-
-function show(obj){
-	obj.style.display = "block";
-}
-
-function hidden(obj){
-	obj.style.display = "none";
-}
-
 function Todo(data) {
 
 	this.data = data;
